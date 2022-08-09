@@ -1,0 +1,436 @@
+:root {
+  --branding-color: #515ed5;
+  --secondary-color: #ecb646;
+  --text-color: #220643;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 96px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.ds-logo {
+  font-size: 45px;
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  border: 2px dotted var(--text-color);
+  border-radius: 50px 70px;
+  padding: 10px 15px;
+  margin: 5px;
+  margin-left: 30px;
+}
+
+.index-img {
+  position: absolute;
+  top: -120px;
+  left: 3%;
+  z-index: -1;
+}
+
+.hero {
+  text-align: center;
+  padding: 180px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.content-container {
+  padding: 60px 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+
+  font-family: var(--default-font-family);
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  width: 170px;
+}
+
+.btn-about {
+  width: 210px;
+}
+
+.btn-project {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 15px 0;
+  width: 170px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.skill-icon {
+  width: 60px;
+}
+
+.skill-name {
+  font-size: 12px;
+  line-height: 14px;
+  padding-top: 5px;
+}
+
+.project-description {
+  padding: 30px 60px;
+}
+
+.logo {
+  max-height: 65px;
+  padding-left: 40px;
+}
+
+.project-card {
+  border-radius: 25px;
+  background-color: #f7f3ff;
+  padding: 25px;
+  margin-bottom: 65px;
+}
+
+.img {
+  border-radius: 10px;
+}
+
+.links {
+  font-size: 16px;
+  color: var(--branding-color);
+}
+
+.contact-girl {
+  width: 380px;
+  position: absolute;
+  z-index: -1;
+  top: 45%;
+  left: 37%;
+}
+
+.links:hover {
+  color: var(--secondary-color);
+}
+
+.link-icon {
+  font-size: 25px;
+}
+
+nav {
+  padding: 5px 0;
+  background: var(--secondary-color);
+}
+
+nav ul {
+  padding: 0;
+  padding-right: 70px;
+  margin: 0;
+  align-self: center;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
+@media (max-width: 1300px) {
+  .index-img {
+    top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .contact-girl {
+    top: 38%;
+    left: 35%;
+  }
+
+  footer .contact-box {
+    background: var(--secondary-color);
+    padding: 30px 50px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .logo {
+    max-height: 45px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .index-img {
+    top: 70px;
+  }
+
+  .buttons-projects {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .contact-girl {
+    top: 50%;
+    left: 30%;
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 42px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .contact-girl {
+    top: 35%;
+    left: 25%;
+  }
+
+  .btn-project {
+    font-size: 12px;
+    padding: 10px 5px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    max-width: 390px;
+  }
+
+  h1,
+  .content h1 {
+    font-size: 42px;
+    line-height: 55px;
+    width: 350px;
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  .ds-logo {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .index-img {
+    width: 320px;
+  }
+
+  .hero p {
+    font-size: 30px;
+  }
+
+  .index-button {
+    display: flex;
+  }
+
+  .btn-branding {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 20px;
+  }
+
+  .btn-project {
+    font-size: 12px;
+    padding: 10px 5px;
+    width: 140px;
+  }
+  
+  .project-card {
+    margin: 25px auto;
+  }
+
+  footer .email-link {
+    font-size: 18px;
+  }
+
+  .links {
+    font-size: 12px;
+    text-align: left;
+    padding-right: 15px;
+  }
+
+  .contact-girl {
+    width: 300px;
+    margin-top: 50px;
+    left: 10%;
+    top: 70%;
+  }
+
+  footer .contact-box {
+    padding: 20px 10px;
+    width: 600px;
+    margin-left: 10px;
+  }
+
+  .footer-coder {
+    position: relative;
+    top: 220px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-girl {
+    top: 90%;
+  }
+
+  .btn-project {
+    align-self: center;
+    padding: 10px 1px;
+  }
+}
