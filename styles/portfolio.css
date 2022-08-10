@@ -1,6 +1,6 @@
 :root {
   --branding-color: #515ed5;
-  --secondary-color: #ecb646;
+  --secondary-color: #F4D08D;
   --text-color: #220643;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -46,13 +46,12 @@ a {
 }
 
 .ds-logo {
-  font-size: 45px;
+  font-size: 30px;
   color: var(--text-color);
   font-family: var(--heading-font-family);
   border: 2px dotted var(--text-color);
   border-radius: 50px 70px;
-  padding: 10px 15px;
-  margin: 5px;
+  padding: 6px 12px;  
   margin-left: 30px;
 }
 
@@ -177,6 +176,10 @@ a {
   z-index: -1;
   top: 45%;
   left: 37%;
+}
+
+.contact-text{
+  opacity: 0.75;
 }
 
 .links:hover {
@@ -362,7 +365,7 @@ footer .social-links a:hover {
   }
 
   .ds-logo {
-    font-size: 32px;
+    font-size: 24px;
     margin: 0;
   }
 
